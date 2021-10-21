@@ -1,18 +1,18 @@
 @echo off
-title XOS 1803 Service Optimizer
+title ShxdowOS Service Optimizer
 
 goto :caution
 
 :caution
 echo.=====================================================================
 echo.
-echo.	Please setup everything before going barebones.
+echo.	Please setup everything before going this Tweaks.
 echo.
-echo.	Barebone services probably will break your future program setups.
+echo.	This tweaks services probably will break your future program setups.
 echo.
 echo.	Use this tool to revert in future in case of need.
 echo.		
-echo.	This tool is made for XOS 1803 users only.
+echo.	This tool is made for ShxdowOS 1803 users only.
 echo.
 echo. Please use this tool with NSudo privileges. 
 echo.
@@ -27,7 +27,7 @@ if errorlevel 1 goto :MainMenu
 :MainMenu
 cls
 echo.=====================================================================
-echo.		XOS 1803 Service Optimizer
+echo.		ShxdowOS Service Optimizer
 echo.=====================================================================
 echo.
 echo.	Please select your configuration according to the list below.
@@ -50,7 +50,7 @@ if errorlevel 1 goto :confirm-desktopnostaticip
 :confirm-desktopnostaticip
 cls
 echo.=====================================================================
-echo.		XOS 1803 Service Optimizer
+echo.		ShxdowOS Service Optimizer
 echo.=====================================================================
 echo.
 echo.	You selected "Desktop, no static ip". Is it correct?
@@ -69,7 +69,7 @@ if errorlevel 1 goto :Desktop-nostaticip
 :confirm-desktopstaticip
 cls
 echo.=====================================================================
-echo.		XOS 1803 Service Optimizer
+echo.		ShxdowOS Service Optimizer
 echo.=====================================================================
 echo.
 echo.	You selected "Desktop, static ip". Is it correct?
@@ -90,7 +90,7 @@ if errorlevel 1 goto :Desktop-staticip
 :confirm-laptop
 cls
 echo.=====================================================================
-echo.		XOS 1803 Service Optimizer
+echo.		ShxdowOS Service Optimizer
 echo.=====================================================================
 echo.
 echo.	You selected "WiFi Users (Laptop or Wifi)". Is it correct?
@@ -109,7 +109,7 @@ if errorlevel 1 goto :Laptop
 :confirm-default
 cls
 echo.=====================================================================
-echo.		XOS 1803 Service Optimizer
+echo.		ShxdowOS Service Optimizer
 echo.=====================================================================
 echo.
 echo.	Do you want to restore Windows default services?
@@ -729,7 +729,7 @@ sc delete gupdatem
 sc delete googlechromeelevationservice
 sc config "AMD External Events Utility" start=disabled
 
-shutdown -r -t 3 /c "Default services restored. Rebooting XOS"
+shutdown -r -t 3 /c "Default services restored. Rebooting ShxdowOS"
 exit
 
 
